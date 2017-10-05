@@ -1,0 +1,27 @@
+O npm é o nosso gerenciador do porjeto com ele podemos instalar o express que seria um pacote de bibliotecas que podemos utilizar no projeto..
+
+para iniciar o npm no nosso projeto usar o comando: npm initi (está dentro da pasta do projeto)
+
+com isso será criado o arquivo package.json que contem todas as informacoes od nosso projeto..
+
+apos podemos instalar o modulo express usando o seguinte comando:
+
+npm install express -save (o - save serve para adicionar o modulo express no nosso porjeto sem ser temporariamente, isso facilita com que outros podemos usar o projeto e nao precisa instalar novamente as dependencias)
+
+
+Node plataforma que executa javascript e o express é um framework, para fazer uma interface entre o node.
+
+npm install ejs --save
+
+EJS - Modulo, permite que podemos cirar pagina html com javascript..
+
+Para fazer com que nossa aplicacao reconheca o ejs como o engine de criação de pagina é necessário adicionar o seguinte app.set('view engine', 'ejs');
+
+Nodemon - Serve para pegar as alteracoes dos arquivos js, nodemon é um recurso para o ambiente
+
+npm install -g nodemon
+
+para executar usar o comando: nodemon app
+
+para incorporar o modulo é necessario adicionar no arquivo js module.exports = msg
+
