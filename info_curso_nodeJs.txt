@@ -25,3 +25,5 @@ para executar usar o comando: nodemon app
 
 para incorporar o modulo é necessario adicionar no arquivo js module.exports = msg
 
+var dbConnection = require('../../config/dbConnection');
+
