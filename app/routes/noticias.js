@@ -1,18 +1,18 @@
-module.exports = function(app){
+module.exports = function(application){
 
-app.get('/noticias', function(req, res){
+application.get('/noticias', function(req, res){
 
-//console.log(dbConnection);
+	//console.log(dbConnection);
 
-var client = app.config.dbConnection();
+	var client = application.config.dbConnection();
 
-client.connect();
+	var noticiasModel = application.app.models.noticiasModel;
 
-client.query('select * from noticias', function(error,result){
+	noticiasModel.getNoticias(client, function(error,result){
 
-	res.render("noticias/noticias", {noticias : result.rows});
+		res.render("noticias/noticias", {noticias : result.rows});
 
-});	
+	});
 
 });
 
