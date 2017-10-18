@@ -27,3 +27,8 @@ para incorporar o modulo é necessario adicionar no arquivo js module.exports = m
 
 var dbConnection = require('../../config/dbConnection');
 
+instalando o body-parser para enviar o conteudo dos formulario via post.
+
+npm install body-parser --save
+
+-------update node : npm i -g npm to update
