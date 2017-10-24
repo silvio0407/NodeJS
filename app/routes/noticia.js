@@ -6,9 +6,9 @@ application.get('/noticia', function(req, res){
 
 	var client = application.config.dbConnection();
 
-	var noticiasModel = application.app.models.noticiasModel;
+	var noticiasModel = new application.app.models.NoticiasDAO(client);
 
-	noticiasModel.getNoticia(client, function(error,result){
+	noticiasModel.getNoticia(function(error,result){
 
 		res.render("noticias/noticia", {noticia : result.rows});
 

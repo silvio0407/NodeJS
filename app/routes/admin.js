@@ -14,9 +14,9 @@ module.exports = function(application){
 
 		var client = application.config.dbConnection();
 
-		var noticiasModel = application.app.models.noticiasModel;
+		var noticiasModel = new application.app.models.NoticiasDAO(client);
 
-		noticiasModel.salvarNoticia(noticia, client, function(error,result){
+		noticiasModel.salvarNoticia(noticia, function(error,result){
 
 			//res.send(result);
 
