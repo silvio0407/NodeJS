@@ -18,11 +18,12 @@ NoticiasDAO.prototype.getNoticia = function(callback){
 };
 
 NoticiasDAO.prototype.salvarNoticia = function(noticia, callback){
+	console.log(noticia);
 
 	this._client.connect();
 
-	this._client.query('insert into noticias(titulo, noticia) values($1, $2)', 
-		[noticia.titulo, noticia.noticia], callback)
+	this._client.query('insert into noticias(titulo, noticia, resumo, autor, data_noticia) values($1, $2, $3, $4, $5)', 
+		[noticia.titulo, noticia.noticia, noticia.resumo, noticia.autor, noticia.data_noticia], callback)
 
 }
 

@@ -32,3 +32,9 @@ instalando o body-parser para enviar o conteudo dos formulario via post.
 npm install body-parser --save
 
 -------update node : npm i -g npm to update
+
+Para instalar o express validator que serve para validar os dados do request usar o comando - npm install express-validator --save
+
+como ele é um diddleware precisamos incluir no nosso serve.js
+para iniciar junto com aplicacao
+
