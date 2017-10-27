@@ -38,3 +38,10 @@ Para instalar o express validator que serve para validar os dados do request usa
 como ele é um diddleware precisamos incluir no nosso serve.js
 para iniciar junto com aplicacao
 
+
+*************************Função de Validacao de Data
+function isDate (x) 
+{ 
+  return (null != x) && !isNaN(x) && ("undefined" !== typeof x.getDate); 
+}
+*******************************
